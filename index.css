@@ -1,0 +1,621 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plantin MT Pro";
+}
+.hero{
+    background-image: url("hero-pic.png");
+    object-fit: contain;
+    width: 100%;
+    height: 100vh;
+    padding: 30px 80px 30px 80px;
+}
+@media (max-width: 910px){
+    .hero{
+    background-image: url("hero-pic.png");
+    background: contain;
+}
+}
+
+#logo{
+   /* line-height: 40px;*/
+   color: #ff5100;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+nav{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    width: 100%;
+}
+nav ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 15px;
+    margin: 0 5px;
+    display: inline-block;
+}
+nav ul{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+nav input{
+    background-color: #ff5100;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+
+nav input:hover{
+    background-color: #d44a0a;
+    cursor: pointer;
+}
+
+/* HAMBURGER MENU */
+/*
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+@media (max-width: 910px){
+    .hamburger{
+        display: block;
+        background-color: #ff5100;
+    }
+    .hamburger .active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger .active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger .active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    } 
+
+    .nav-menu{
+        position: fixed;
+        left: -100px;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        display: none;
+    }
+
+
+
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
+*/
+
+/* HERO SECTION */
+
+.hero h1{
+    display: flex;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 0.2rem;
+    font-weight: 600;
+    font-size: 50px;
+    font-family: "Plantin MT Pro";
+}
+h1 span{
+    color: #ff5100;
+}
+#lower-text{
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+}
+
+
+/* SCREEN-2*/
+.screen-2{
+display: flex;
+background-color: #f4f6f7;
+/*padding: 50px 80px;*/
+display: flex;
+}
+@media (max-width: 910px){
+    
+    .screen-2{
+        display: flex;
+        flex-direction: column;
+        background-color: #f4f6f7;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        /*padding: 50px 80px;*/
+        }
+        .screen-2 .right img{
+            display: block;
+            position: relative;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+}
+
+.screen-2 .left{
+    text-align: center;
+    text-justify: distribute;
+    margin: auto auto;
+    width: 30%;
+    padding: auto 20px;
+}
+.screen-2 .left input{
+    margin-top: 30px;
+    padding: 13px 20px;
+    background-color: #ff5100;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+.screen-2 .left input:hover{
+    background-color: #d44a0a;
+    cursor: pointer;
+}
+.screen-2 .left p{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.screen-2 .right{
+    padding: 50px 40px;
+    width: 65%;
+}
+.screen-2 .right img{
+    display: block;
+    margin-left: auto;
+    margin-right: 70px;
+    width: 100%;
+    height: 100%;
+}
+.screen-3 .right{
+    text-align: center;
+    text-justify: distribute;
+    margin: auto auto;
+    width: 30%;
+    padding: auto 20px;
+}
+
+
+/* SCREEN-3*/
+
+.screen-3{
+    display: flex;
+    background-color: #fdc300;
+    /*padding: 50px 80px;*/
+    }
+    @media (max-width: 910px){
+    
+        .screen-3{
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: #f4f6f7;
+            justify-content: center;
+            align-items: center;
+            /*padding: 50px 80px;*/
+            }
+         .screen-3 .left img{
+                display: block;
+                position: relative;
+                padding: aut0 40px;
+            }
+    }
+
+    .screen-3 .left{
+        text-align: center;
+        text-justify: distribute;
+        margin: auto auto;
+        width: 70%;
+        padding: auto 20px;
+    }
+    .screen-3 .right input{
+        margin-top: 30px;
+        padding: 15px 20px;
+        background-color: #ff5100;
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+        transition: 0.8s ease;
+        cursor: pointer;
+    }
+
+    .screen-3 .right input:hover{
+        background-color: #d44a0a;
+        cursor: pointer;
+    }
+
+    .screen-3 .right p{
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    
+    .screen-3 .left{
+        padding: 50px 40px;
+        width: 60%;
+    }
+    .left img{
+        display: block;
+        margin-left: auto;
+        margin-right: 70px;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* SCREEN-4 */
+    .screen-4{
+    
+        display: flex;
+        background-color: #f4f6f7;
+        /*padding: 50px 80px;*/
+        display: flex;
+        }
+        @media (max-width: 910px){
+    
+            .screen-4{
+                display: flex;
+                flex-direction: column;
+                background-color: #f4f6f7;
+                justify-content: center;
+                align-items: center;
+                /*padding: 50px 80px;*/
+                }
+             .screen-4 .right img{
+                    display: block;
+                    position: relative;
+                    padding: aut0 40px;
+                }
+        }
+        
+        .screen-4 .left{
+            text-align: center;
+            text-justify: distribute;
+            margin: auto auto;
+            width: 30%;
+            padding: auto 20px;
+        }
+        .screen-4 .left input{
+            margin-top: 30px;
+            padding: 13px 20px;
+            background-color: #ff5100;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            transition: 0.8s ease;
+            cursor: pointer;
+        }
+
+        .screen-4 .left input:hover{
+            background-color: #d44a0a;
+            cursor: pointer;
+            }
+    
+        .screen-4 .left p{
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        
+        .screen-4 .right{
+            padding: 50px 40px;
+            width: 65%;
+        }
+        .screen-4 .right img{
+            display: block;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-right: 60px;
+            width: 100%;
+            height: 100%;
+        }
+
+
+ /* SCREEN-5*/
+.screen-5{
+    display: flex;
+    background-color: #fdc300;
+    /*padding: 50px 80px;*/
+    display: flex;
+    }
+    @media (max-width: 910px){
+        .screen-5{
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: #f4f6f7;
+            justify-content: center;
+            align-items: center;
+            /*padding: 50px 80px;*/
+            }
+         .screen-5 .right img{
+                display: block;
+                position: relative;
+                padding: aut0 40px;
+            }
+    }
+    .screen-5 .right{
+        text-align: center;
+        text-justify: distribute;
+        margin: auto auto;
+        width: 30%;
+        padding: auto 20px;
+    }
+    .screen-5 .right input{
+        margin-top: 30px;
+        padding: 13px 20px;
+        background-color: #ff5100;
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+        transition: 0.8s ease;
+        cursor: pointer;
+    }
+
+    .screen-5 .right input:hover{
+        background-color: #d44a0a; 
+        cursor: pointer;
+    }
+
+    .screen-5 .right p{
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    
+    .screen-5 .left{
+        padding: 50px 40px;
+        width: 65%;
+    }
+    .screen-5 .left img{
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 60px;
+        width: 100%;
+        height: 100%;
+    }       
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-area{
+    text-align: center;
+    background-color: #f4f6f7;
+}
+.first-text{
+    padding-top: 80px;
+}
+.text-area h1{
+    Font-family: 'Plantin MT Pro';
+    font-size: 2.4rem;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: Top
+}
+.text-area p{
+    padding: 10px 200px;
+    font-size: 1.2rem;
+}
+#mutti{
+    text-justify: center;
+    padding: 5px 370px;
+}
+#skoll{
+    padding: 10px 150px;
+}
+#skoll h4{
+    margin: 10px 5px;
+    font-size: 1.2rem;
+}
+.text-area input{
+    margin-top: 30px;
+        padding: 13px 20px;
+        background-color: #ff5100;
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+        transition: 0.8s ease;
+        cursor: pointer;
+}
+.text-area input:hover{
+    background-color: #d44a0a;
+    cursor: pointer;
+    }
+
+hr{
+    margin: 50px 130px;
+}
+
+.cards{
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.top-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media (max-width: 650px){
+    .top-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.top-cards #card-1{
+    background-color: #fff;
+    max-height: 200px;
+    padding: 20px 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 40%;
+    justify-content: center;
+}
+.top-cards{
+        font-size: 1.2rem;
+}
+.top-cards h1{
+    margin-bottom: 40px;
+    color: #ff5100;
+    font-size: 2.8rem;
+}
+
+.top-cards #card-2{
+    background-color: #fff;
+    max-height: 200px;
+    padding: 20px 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 35%;
+    justify-content: center;
+}
+
+.top-cards #card-3{
+    background-color: #fff;
+    max-height: 200px;
+    padding: 20px 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 35%;
+    justify-content: center;
+}
+.top-cards #card-4{
+    background-color: #fff;
+    max-height: 200px;
+    padding: 20px 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 40%;
+    justify-content: center;
+}
+
+/* FOOTER */
+footer{
+    background-color: #313131;
+
+}
+footer svg{
+    position: relative;
+    top: -90px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding-left: 100px;
+    padding-right: 150px;
+    position: relative;
+    top: -70px;
+}
+.footer .left{
+    padding-left: 60px;
+    width: 30%;
+}
+.footer .left h2{
+color: #ff5100;
+font-size: 2rem;
+cursor: pointer;
+}
+.footer .left p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 40px;
+}
+
+.footer .right ul{
+    display: inline-block;
+}
+
+.footer .right li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 15px;
+    margin: 0 5px;
+    display: inline-block;
+   line-height: 180px;
+}
+.footer .right ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: .8rem;
+}
+
+/* nav{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    width: 100%;
+}
+nav ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 15px;
+    margin: 0 5px;
+    display: inline-block;
+}
+nav ul{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}*/
